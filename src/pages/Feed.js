@@ -12,7 +12,7 @@ function Feed() {
 
     const [posts, setPosts] = useState([])
     const [loading, setLoading] = useState(true)
-    const [ error, setError ] = useState(false)
+    const [error, setError ] = useState(false)
 
     useEffect(() => {
         axios.get("https://upload-my-api.herokuapp.com/post")

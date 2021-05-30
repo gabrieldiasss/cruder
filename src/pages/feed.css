@@ -49,6 +49,7 @@ main .cards .card {
     background-color: #2F3644;
 
     padding: 30px 40px;
+    width: 600px;
 
     border-radius: 7px;
     margin-top: 40px;

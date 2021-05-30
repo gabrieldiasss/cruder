@@ -21,17 +21,8 @@ function Edit(props: PropsWithRef<any>) {
 
     let history = useHistory()
 
-    const [list, setList ] = useState({})
-
-    const preoladedValues = {
-        title: list.title,
-        description: list.description,
-        content: list.content
-    }
-
     const { register, handleSubmit, formState: {errors}, reset } = useForm({
-        resolver: yupResolver(schema),
-        defaultValue: preoladedValues
+        resolver: yupResolver(schema)
     })
 
     useEffect(() => {
